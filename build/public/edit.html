@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Entry</title>
+  <link rel="stylesheet" href="css/editstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  <div class="header">
+    <h1>Edit Entry</h1>
+  </div>
+
+  <form id="editForm" class="form-container">
+    <br><br>
+    <button type="submit">Save Changes</button><br><br>
+    <button type="button" onclick="window.history.back()">Back</button><br><br>
+    <button type="button" id="deleteBtn">Delete Entry</button><br><br>
+    <p id="errorText" class="error-message" style="display: none;">Error updating entry!</p>
+    <p id="deleteErrorText" class="error-message" style="display: none;">Error deleting entry!</p>
+    <br><br>
+  </form>
+
+  <script src="js/edit.js" type="module"></script>
+</body>
+</html>

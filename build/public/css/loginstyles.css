@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px; /* Set the max-width as per your logo size */
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  width: calc(100% - 22px); /* Adjusting width for border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+  
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .login-container {
+    padding: 10px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  button {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+#passwordMismatch {
+  display: none;
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Style for Reset Password and Cancel buttons */
+button[type="submit"], button#cancelReset {
+  width: calc(100% - 22px); /* Adjusting width for border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* Additional styling for Cancel button (optional) */
+button#cancelReset:hover {
+  background-color: #f44336; /* Change color for Cancel button on hover */
+}
+
+/* Style for Forgot Password button */
+#forgotPasswordButton {
+  width: calc(100% - 22px); /* Adjusting width for border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+#forgotPasswordButton:hover {
+  background-color: #45a049; /* Change color for Forgot Password button on hover */
+}

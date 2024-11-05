@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visitor Management System</title>
+  <link rel="stylesheet" href="css/addstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  
+  <div class="header">
+    <h1>Add a New Entry</h1>
+  </div>
+
+  <form id="visitorForm" class="form-container">
+    <button type="submit">Add Entry</button><br><br>
+    <button type="button" onclick="window.history.back()">Back</button><br><br>
+    <p id="errorText" class="error-message" style="display: none;">Error adding entry!</p>
+  </form>
+
+  <script src="js/add.js" type="module"></script>
+</body>
+</html>

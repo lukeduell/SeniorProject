@@ -1,0 +1,65 @@
+<?php
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: ".gmdate("D, d M Y H:i:s",time()+(-1*60))." GMT");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Services</title>
+  <link rel="stylesheet" href="css/loginstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="form-container">
+
+    <!-- Login Form -->
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Reset Password Form -->
+    <form id="resetPasswordForm" style="display: none;">
+      <label for="resetEmail">Email:</label>
+      <input type="email" id="resetEmail" autocomplete="email" required>
+      <button type="submit">Reset Password</button>
+      <button type="button" id="cancelReset">Cancel</button>
+    </form>
+
+    <button id="forgotPasswordButton">Forgot Password</button>
+
+    <div id="errorMessageReset" style="color: red;"></div>
+    <div id="errorMessage" style="display: none; color: red;"></div>
+  </div>
+
+
+  <!-- Sign Up Form -->
+  <div class="form-container">
+    <form id="signupForm">
+      <label for="email">Email:</label>
+      <input type="email" id="signup-email" name="email" autocomplete="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="signup-password" name="password" autocomplete="current-password" required>
+  
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="current-password" required>
+
+      <div id="passwordMismatch" style="display: none; color: red; margin-bottom: 10px;">Passwords do not match</div>
+      <div id="errorMessage-signup" style="display: none; color: red; margin-bottom: 10px;"></div>
+  
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+
+  <script src="js/session_login.js" type="module"></script>
+</body>
+</html>

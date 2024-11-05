@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of Entries</title>
+  <link rel="stylesheet" href="css/liststyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <h1>List of Entries</h1>
+    <button class="add-entry-btn" onclick="redirectToAddPage()">Add Entry</button>
+    <button id="admin-btn" class="admin-btn">Admin</button>
+    <button id="logout-btn" class="add-entry-btn">Log Out</button>
+  </div>
+  <br>
+  <div class="search-and-sort">
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search by name...">
+    </div>
+    <div class="sort-container">
+      <label for="sortBy">Sort By:</label>
+      <select id="sortBy">
+        <option value="dateArrivedAZ">Date Arrived New to Old</option>
+        <option value="dateArrivedZA">Date Arrived Old to New</option>
+        <option value="nameAZ">Name A to Z</option>
+        <option value="nameZA">Name Z to A</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="pagination">
+    <button id="firstPageTop">First Page</button>
+    <button id="prevPageTop">Previous</button>
+    <span id="currentPage">Page 1</span>
+    <button id="nextPageTop">Next</button>
+  </div>
+
+  <ul id="entryList"></ul>
+
+  <div class="pagination">
+    <button id="firstPage">First Page</button>
+    <button id="prevPage">Previous</button>
+    <button id="nextPage">Next</button>
+  </div>
+  
+
+  <script>
+    function redirectToAddPage() {
+      window.location.href = 'add.html';
+    }
+    function editEntry(entryId) {
+      window.location.href = `edit.html?id=${entryId}`;
+    }
+  </script>
+
+  <script src="js/list.js" type="module"></script>
+</body>
+</html>

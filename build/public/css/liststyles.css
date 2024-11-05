@@ -1,0 +1,245 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.add-entry-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Entry list styles */
+
+#entryList {
+    padding: 0;
+    list-style: none;
+}
+
+#entryList li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Pagination styles */
+
+.pagination {
+    text-align: center;
+    padding: 10px;
+}
+
+.pagination button {
+    padding: 7px 12px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pagination-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.pagination-header button {
+    padding: 7px 12px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.search-and-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.search-container {
+    flex: 1;
+}
+.search-input {
+    width: 100%;
+    max-width: 300px; /* Adjust maximum width as needed */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.sort-container {
+    flex: 1;
+    text-align: right;
+}
+
+/* Media query for mobile devices */
+
+@media screen and (max-width: 1300px) {
+    .header {
+    padding: 10px;
+    }
+
+    .add-entry-btn {
+    padding: 8px;
+    font-size: 14px;
+    }
+
+    .sort-container {
+    padding: 8px;
+    }
+
+    select {
+    padding: 6px;
+    font-size: 14px;
+    }
+
+    #entryList li {
+    padding: 10px;
+    }
+
+    .pagination {
+    padding: 10px;
+    }
+
+    .pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    }
+
+    .search-and-sort {
+        display: block;
+        text-align: center;
+    }
+      .search-container,
+      .sort-container {
+        margin-bottom: 10px;
+    }
+      .search-input {
+        width: calc(100% - 20px); /* Adjust width */
+        max-width: 100%;
+        margin: 0 auto;
+    }
+      .sort-container {
+        text-align: center;
+    }
+}
+  
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.error-text {
+    color: red;
+}
+
+.back-button {
+    margin-right: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style individual details (Date Arrived, Name, Description, Color) */
+.details-container span {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.list-date{
+    margin-right: 20px;
+    font-weight: bold;
+}
+.list-name{
+    margin-right: 50px;
+}
+.list-description{
+    margin-right: 50px;
+}
+.list-color {
+    margin-right: 50px; /* Adjust the margin as needed for desired spacing */
+}
+
+.logout-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.admin-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}

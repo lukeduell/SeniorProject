@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <h1>Admin Panel</h1>
+    <button id="backBtn">Back to List</button>
+  </div>
+
+  <div class="container">
+    <section id="fields-section">
+      <h2>Manage Fields</h2>
+      <div id="fieldsContainer"></div>
+      <button id="saveFieldsBtn">Save Fields</button>
+    </section>
+
+    <section id="users-section">
+      <h2>Manage Authorized Users</h2>
+      <div id="usersContainer"></div>
+    </section>
+
+    <section id="add-user-section">
+      <h2>Add New User</h2>
+      <input type="email" id="newUserEmail" placeholder="Enter new user email">
+      <input type="password" id="newUserPassword" placeholder="Enter new user password">
+      <button id="addUserBtn">Add User</button>
+    </section>
+  </div>
+
+  <script src="js/admin.js" type="module"></script>
+</body>
+</html>
